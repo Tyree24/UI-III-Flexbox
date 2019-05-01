@@ -3,64 +3,261 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body {
+  width: 890px;
+  margin: 20px 10px 0px 130px;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+nav a {
+  color: lightgrey;
+  margin-bottom: 30px;
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  transition: 0.1s linear;
+  border-radius: 5px;
+}
+
+.logo {
+  float: right;
+  margin: -10px;
+}
+
+header h1 {
+  font-size: 80px;
+  width: 300px;
+  text-align: center;
+  margin: 50px 140px 5px 20px;
+  float: left;
+}
+button {
+  border: 1px solid #000;
+  padding: 8px 50px;
+  background-color: white;
+  transition: 0.1s linear;
+}
+button:hover {
+  background-color: #000;
+  color: white;
+  padding: 20px;
+  transition: 0.1s linear;
+  border-radius: 5px;
+}
+hr {
+  margin: 45px 0px 20px 0px;
+  border: 1px solid #000;
+}
+.top-content {
+  display: flex;
+}
+.middle-img {
+  margin: 30px 0px;
+}
+.bottom-content {
+  display: flex;
+}
+.contact {
+  width: 200px;
+  margin-top: 45px;
+}
+.contact p {
+  margin-top: 20px;
+}
+footer {
+  text-align: center;
+  margin: 80px;
+}
+.services-header-img {
+  margin-top: 50px;
+}
+.service {
+  margin: 25px 0px 0px 0px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+}
+.container div {
+  width: 45%;
+  padding: 30px;
+  border: 1px solid #000;
+  margin-top: 10px;
+}
+button {
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.facts {
+  width: 400px;
+  margin: 30px;
+}
+.facts p {
+  margin-bottom: 20px;
+}
+
+.facts li {
+  line-height: 1.8;
+}
+.footer {
+  margin: 150px 0px 10px 100px;
+  text-align: center;
+}
